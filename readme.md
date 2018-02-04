@@ -25,5 +25,5 @@ Options:
 *  -h, --help             Display help and usage details
 
 ```bash
-createtask -n TaskName -f "Task Name" -a "Donovan Brown" -d "My cool task"  
+appservice-ping -u http://someUrlToPing.com -t 1000 -r 10
 ```
