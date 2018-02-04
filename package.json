@@ -1,6 +1,6 @@
 {
    "name": "appservice-ping",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "description": "Pings an Azure App Service to make sure it is avialable. This can be used in an automatic deployment to make sure an App Service is ready.",
    "main": "index.js",
    "scripts": {
