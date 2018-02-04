@@ -1,0 +1,32 @@
+{
+   "name": "appservice-ping",
+   "version": "0.0.1",
+   "description": "Pings an Azure App Service to make sure it is avialable. This can be used in an automatic deployment to make sure an App Service is ready.",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/DarqueWarrior/appservice-ping.git"
+   },
+   "bin": {
+      "appservice-ping": "./appservice-ping"
+   },
+   "keywords": [
+      "Azure",
+      "AppService",
+      "VSTS"
+   ],
+   "author": "Donovan Brown",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/DarqueWarrior/appservice-ping/issues"
+   },
+   "homepage": "https://github.com/DarqueWarrior/appservice-ping#readme",
+   "dependencies": {
+      "async": "^2.6.0",
+      "cli": "^1.0.1",
+      "request": "^2.83.0"
+   }
+}
