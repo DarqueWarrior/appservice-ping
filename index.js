@@ -30,9 +30,9 @@ function main(args) {
 
    if(log === `true`) {
       console.log(`Arguments:`);
-      console.log(`url: ${url}`);
-      console.log(`timeout: ${timeout}`);
-      console.log(`retries: ${retries}`);      
+      console.log(`url: ${options.url}`);
+      console.log(`timeout: ${options.timeout}`);
+      console.log(`retries: ${options.retries}`);      
    }
 
    async.whilst(
