@@ -1,7 +1,7 @@
 {
    "name": "appservice-ping",
-   "version": "0.0.3",
-   "description": "Pings an Azure App Service to make sure it is avialable. This can be used in an automatic deployment to make sure an App Service is ready.",
+   "version": "0.0.4",
+   "description": "Pings an Azure App Service to make sure it is available. This can be used in an automatic deployment to make sure an App Service is ready.",
    "main": "index.js",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,8 @@
    "keywords": [
       "Azure",
       "AppService",
-      "VSTS"
+      "VSTS",
+      "RubDevOpsOnIt"
    ],
    "author": "Donovan Brown",
    "license": "MIT",

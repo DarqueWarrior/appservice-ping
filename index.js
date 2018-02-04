@@ -25,6 +25,15 @@ function main(args) {
 
    var count = 0;
    var exitCode = -1;
+   var log = process.env.SYSTEM_DEBUG || `false`;
+   log = log.toLowerCase();
+
+   if(log === `true`) {
+      console.log(`Arguments:`);
+      console.log(`url: ${url}`);
+      console.log(`timeout: ${timeout}`);
+      console.log(`retries: ${retries}`);      
+   }
 
    async.whilst(
       function () {
@@ -37,7 +46,13 @@ function main(args) {
             }, function (err, res, body) {
                count++;
 
-               if (!err) {
+               if(log === `true`) {
+                  console.log(`Attempt: ${count}`);
+                  console.log(`err: ${err}`);
+                  console.log(`res.statusCode: ${res.statusCode}`);
+               }
+
+               if (!err && res.statusCode < 400) {
                   exitCode = 0;
                   finished(null, 0)
                } else {
